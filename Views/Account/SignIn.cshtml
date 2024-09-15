@@ -1,0 +1,38 @@
+@model myapp.Views.Account.SignIn
+@{
+    ViewData["Title"] = "Sign In Page";
+}
+
+<div class="row" style="margin-top:5%;">
+    <div class="col-md-12 text-center">
+        <h3>SignalR with Entity Framework</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img src="~/images/inventory-management.png" height="40%" width="30%" />
+    </div>
+    <div class="col-md-4">
+        <form asp-action="PostSignIn" style="margin-top:40%;">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="row">
+                <div class="col-3">Username</div>
+                <div class="col-6">
+                    <input type="text" name="username" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">Password</div>
+                <div class="col-6">
+                    <input type="password" name="password" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary">Sign-In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
